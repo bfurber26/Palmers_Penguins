@@ -1,0 +1,42 @@
+---
+title: "Palmers_penguins"
+format: html
+editor: visual
+---
+
+```{r}
+library(tidyverse)
+library(palmerpenguins)
+```
+
+```{r}
+penguins
+```
+
+```{r}
+colnames(penguins)
+```
+
+```{r}
+dim(penguins)
+```
+
+```{r}
+View(penguins)
+```
+
+```{r}
+?penguins
+```
+
+```{r}
+ggplot(data = penguins) +
+  geom_density(mapping = aes(x = bill_length_mm, fill = species), alpha = .5)
+  
+```
+
+```{r}
+ggplot(data = penguins) +
+  geom_histogram(mapping = aes(x = bill_length_mm, fill = species)) + 
+  facet_wrap(~species, nrow=3)
+```
