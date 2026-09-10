@@ -1,6 +1,6 @@
 ---
 title: "Palmers_penguins"
-format: html
+format: gfm
 editor: visual
 ---
 
